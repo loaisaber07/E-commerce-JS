@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <ul class="nav navbar1 align-items-center justify-content-between" style="height: 10vh;">
+        <li class="nav-item">
+            <img src="image/logo2.jpg" class="rounded-circle" width="50px" height="50px">
+        </li>
+        <div class="d-flex">
+            <li class="nav-item ">
+                <a class="nav-link " href="Home.html"><strong style="color: #f0f7ff;">Home</strong></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html"><strong style="color: #f0f7ff;">About</strong></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html"><strong style="color: #f0f7ff;">Contact Us</strong></a>
+            </li>
+        </div> 
+        <div  class="align-content-center" 
+        style="position: relative;  height: 60px;width: 60px;  margin-top: 6px;margin-right: 5px;
+        margin-right: 30px;">
+            <i class="fa-solid fa-cart-arrow-down fa-xl" ></i>
+            <span class="badge badge-secondary " style="position:absolute; top:0 ; right: 2;
+            background-color: #11365a;">
+                    <p>Total: <span id="productCount" class="text-danger">0</span></p></span>
+        </div>
+    </ul>
+ 
+    <table id="productTable" border="1" style="height: 80vh;">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Product rows will be added here dynamically -->
+        </tbody>
+    </table>
+    <button id="checkoutButton" style="margin-top: 10px;">Checkout</button>
+    <p style="margin-top: 5px;"> <strong>Total Price:</strong> $<span id="totalPrice">0.00</span></p>
+
+
+    
+ <footer class=" text-center text-lg-start" style="background-color:#0c85eb ; color: #f0f7ff; 
+ position: relative; bottom: 0; height: 10vh;">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      <strong style="color: #f0f7ff;">© 2024 Copyright:</strong>
+      <a class="text-body" href="https://mdbootstrap.com/">
+        <strong style="color: #f0f7ff;">Louay Saber</strong>
+      </a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+
+    
+   
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>    
+    <script src="cart.js"></script>
+</body>
+</html>
